@@ -1,0 +1,44 @@
+var AuthorizeNet = require('./lib/AuthorizeNetGateway.js');
+var BaseGateway = require('./lib/BaseGateway.js');
+var PayFlow = require('./lib/PayFlowGateway.js');
+var VirtualMerchant = require('./lib/VirtualMerchant.js');
+var RocketGate = require('./lib/RocketGateGateway.js');
+var supportedGateway = {
+    "Authorize.Net": AuthorizeNet,
+    "VirtualMerchant": VirtualMerchant,
+    "PayFlow": PayFlow,
+    "RocketGate": RocketGate
+};
+
+/**
+ * @param {String} gateway - the name of a registered gateway
+ * @param {Object} constructorOption - an object with the properties required by a particular Gateway factory,
+ * see the relevant gateway factory for more details
+ * @returns {BaseGateway} an object which inherits (prototype) from BaseGateway
+ */
+exports.use = function use(gateway, constructorOption) {
+
+    var gatewayFactory = supportedGateway[gateway];
+    var gw;
+
+    if (!gatewayFactory) {
+        throw new Error('the gateway provided does not match any item of the list...todo');
+    }
+
+    gw = gatewayFactory(constructorOption);
+
+    if (!gw instanceof BaseGateway) {
+        throw new Error('the gateway must be an instance of the BaseGateway');
+    }
+
+    return gw;
+};
+
+/**
+ * register a new gateway factory (note it will overwrite an existing one
+ * @param {String} name - the gateway name
+ * @param {Function} factory - a factory function which must return an instance of BaseGateway
+ */
+exports.registerGateway = function registerGateway(name, factory) {
+    supportedGateway[name] = factory;
+};
