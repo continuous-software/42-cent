@@ -21,8 +21,8 @@ describe('Payflow service', function () {
         it('should submit transaction request', function (done) {
             var cc = {
                 creditCardNumber: '4111111111111111',
-                expirationYear: '2017',
-                expirationMonth: '1',
+                expirationYear: '17',
+                expirationMonth: '01',
                 cvv: '000'
             };
 
@@ -35,8 +35,8 @@ describe('Payflow service', function () {
         it('should reject the promise when the web service returns an error code', function (done) {
             var cc = {
                 creditCardNumber: '4111111111111111',
-                expirationYear: '1999',
-                expirationMonth: '1',
+                expirationYear: '99',
+                expirationMonth: '01',
                 cvv: '000'
             };
 
