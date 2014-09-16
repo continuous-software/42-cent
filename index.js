@@ -1,11 +1,9 @@
-var AuthorizeNet = require('./lib/AuthorizeNetGateway.js');
-var BaseGateway = require('./lib/BaseGateway.js');
-var PayFlow = require('./lib/PayFlowGateway.js');
-var VirtualMerchant = require('./lib/VirtualMerchant.js');
-var RocketGate = require('./lib/RocketGateGateway.js');
+var AuthorizeNet = require('42-cent-authorizenet');
+var BaseGateway = require('42-cent-base').BaseGateway;
+var PayFlow = require('42-cent-payflow');
+var RocketGate = require('42-cent-rocketgate');
 var supportedGateway = {
     "Authorize.Net": AuthorizeNet,
-    "VirtualMerchant": VirtualMerchant,
     "PayFlow": PayFlow,
     "RocketGate": RocketGate
 };
