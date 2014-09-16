@@ -2,6 +2,7 @@ var conf = require('../config.js').RocketGate;
 var cent42 = require('../index.js');
 var assert = require('assert');
 var rocketGate = require('rocketGate');
+var errors = require('../lib/errors.js');
 
 describe('rocket gate service', function () {
 
@@ -30,7 +31,8 @@ describe('rocket gate service', function () {
             var order = {amount: '3.99'};
 
             service.submitTransaction(order, cc, {}, {}).then(function (result) {
-                assert(result);
+                assert.equal(result.transactionId, result._original.Get(rocketGate.GatewayResponse.TRANSACT_ID), 'it should have the appropriate transactionId');
+                assert.equal(result.authCode, result._original.Get(rocketGate.GatewayResponse.AUTH_NO), 'it should have the appropriate authCode');
                 done();
             });
         });
@@ -48,11 +50,10 @@ describe('rocket gate service', function () {
         service.submitTransaction(order, cc, {}, {}).then(function (result) {
             throw new Error('should not get here');
         }, function (reason) {
+            assert(reason instanceof errors.GatewayError);
+            assert.equal(reason.message, 'see response code 403 in rocket gate documentation', 'it should have the appropriate message');
+            assert(reason._original, '_original should be defined');
             done();
         });
-
-
     });
-
-
 });
