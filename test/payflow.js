@@ -1,6 +1,7 @@
 var conf = require('../config.js').PayFlow;
 var cent42 = require('../index.js');
 var assert = require('assert');
+var errors = require('../lib/errors.js');
 
 describe('Payflow service', function () {
 
@@ -27,7 +28,8 @@ describe('Payflow service', function () {
             };
 
             service.submitTransaction({amount: randomAmount()}, cc).then(function (result) {
-                assert(result, 'result should be defined');
+                assert.equal(result.authCode, result._original.AUTHCODE, 'it should have the authorization code');
+                assert.equal(result.transactionId, result._original.PNREF, 'it should have the transaction id');
                 done();
             });
         });
@@ -43,12 +45,11 @@ describe('Payflow service', function () {
             service.submitTransaction({amount: randomAmount()}, cc).then(function (result) {
                 throw new Error('it should not go here');
             }, function (err) {
-                console.log(err);
+                assert(err instanceof errors.GatewayError);
+                assert.equal(err.message, 'Invalid expiration date: 0199');
+                assert(err._original, 'original should be defined');
                 done();
             });
         });
-
-
     });
-
 });
