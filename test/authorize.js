@@ -1,6 +1,7 @@
 var conf = require('../config.js').authorize;
 var cent42 = require('../index.js');
 var assert = require('assert');
+var errors = require('../lib/errors.js');
 
 describe('AuthorizeNet service', function () {
 
@@ -24,8 +25,9 @@ describe('AuthorizeNet service', function () {
                 expirationMonth: '1',
                 cvv: '666'
             };
-            service.submitTransaction({amount: randomAmount()}, cc).then(function (transaction) {
-                assert.equal(transaction.transactionResponse.responseCode, '1');
+            service.submitTransaction({amount: randomAmount()}, cc).then(function (result) {
+                assert.equal(result.authCode, result._original.transactionResponse.authCode);
+                assert.equal(result.transactionId, result._original.transactionResponse.transId);
                 done();
             });
         });
@@ -41,9 +43,9 @@ describe('AuthorizeNet service', function () {
             service.submitTransaction({amount: randomAmount()}, cc).then(function () {
                 throw new Error('should not get here');
             }, function (rejection) {
-                var response = rejection.transactionResponse;
-                assert.equal(response.errors.error.errorCode, 6);
-                assert.equal(response.errors.error.errorText, 'The credit card number is invalid.');
+                assert(rejection instanceof errors.GatewayError, 'should be an instance of GatewayError');
+                assert.equal(rejection.message, 'The credit card number is invalid.');
+                assert(rejection._original, 'original should be defined');
                 done();
             });
         });
@@ -59,6 +61,7 @@ describe('AuthorizeNet service', function () {
             service.submitTransaction({}, cc).then(function () {
                 throw new Error('should not get here');
             }, function (rejection) {
+                assert(!(rejection instanceof errors.GatewayError), 'should not be an instance of GatewayError');
                 assert.equal(rejection.message, 'amount is required');
                 done();
             });
