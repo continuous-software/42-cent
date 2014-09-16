@@ -26,8 +26,13 @@ describe('Payflow service', function () {
                 expirationMonth: '01',
                 cvv: '000'
             };
+            var prospect={
+                customerFirstName:'Bob',
+                customerLastName:'Eponge',
+                customerEmail:'bob.eponge@gmail.com'
+            };
 
-            service.submitTransaction({amount: randomAmount()}, cc).then(function (result) {
+            service.submitTransaction({amount: randomAmount()}, cc, prospect).then(function (result) {
                 assert.equal(result.authCode, result._original.AUTHCODE, 'it should have the authorization code');
                 assert.equal(result.transactionId, result._original.PNREF, 'it should have the transaction id');
                 done();

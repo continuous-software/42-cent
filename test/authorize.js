@@ -25,7 +25,12 @@ describe('AuthorizeNet service', function () {
                 expirationMonth: '1',
                 cvv: '666'
             };
-            service.submitTransaction({amount: randomAmount()}, cc).then(function (result) {
+            var prospect={
+                customerFirstName: 'Bob',
+                customerLastName: 'Eponge',
+                customerEmail: 'bob.eponge@gmail.com'
+            };
+            service.submitTransaction({amount: randomAmount()}, cc, prospect).then(function (result) {
                 assert.equal(result.authCode, result._original.transactionResponse.authCode);
                 assert.equal(result.transactionId, result._original.transactionResponse.transId);
                 done();

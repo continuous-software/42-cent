@@ -16,7 +16,7 @@
   "dependencies": {
     "bluebird": "^2.3.2",
     "lodash": "^2.4.1",
-    "node-authorize-net": "0.0.1",
+    "node-authorize-net": "0.0.2",
     "payflow": "0.0.2",
     "rocketgate": "0.0.2",
     "virtualmerchant": "0.0.5"
