@@ -1,6 +1,6 @@
 {
     "name": "42-cent",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "abstraction of 42-cent payment gateways, this is a structural interface the different payement gateways must implement ",
     "main": "index.js",
     "scripts": {
@@ -18,8 +18,8 @@
     "author": "Laurent Renard",
     "license": "MIT",
     "dependencies": {
-        "42-cent-authorizenet": "0.1.0",
-        "42-cent-base": "0.1.0",
+        "42-cent-authorizenet": "0.2.0",
+        "42-cent-base": "0.2.0",
         "42-cent-payflow": "0.1.0",
         "42-cent-rocketgate": "0.1.1"
     },
