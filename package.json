@@ -1,29 +1,29 @@
 {
-    "name": "42-cent",
-    "version": "0.2.1",
-    "description": "abstraction of 42-cent payment gateways, this is a structural interface the different payement gateways must implement ",
-    "main": "index.js",
-    "scripts": {
-        "test": "NODE_ENV='test' node ./node_modules/.bin/mocha ./test/ -R spec -t 35000"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/continuous-software/42-cent.git"
-    },
-    "keywords": [
-        "payment",
-        "gateway",
-        "42-cent"
-    ],
-    "author": "Laurent Renard",
-    "license": "MIT",
-    "dependencies": {
-        "42-cent-authorizenet": "0.2.0",
-        "42-cent-base": "0.2.0",
-        "42-cent-payflow": "0.2.0",
-        "42-cent-rocketgate": "0.2.0"
-    },
-    "devDependencies": {
-        "mocha": "^1.21.4"
-    }
+  "name": "42-cent",
+  "version": "0.2.2",
+  "description": "abstraction of 42-cent payment gateways, this is a structural interface the different payement gateways must implement ",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV='test' node ./node_modules/.bin/mocha ./test/ -R spec -t 35000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/continuous-software/42-cent.git"
+  },
+  "keywords": [
+    "payment",
+    "gateway",
+    "42-cent"
+  ],
+  "author": "Laurent Renard",
+  "license": "MIT",
+  "dependencies": {
+    "42-cent-authorizenet": "~0.2.1",
+    "42-cent-base": "0.2.0",
+    "42-cent-payflow": "~0.2.0",
+    "42-cent-rocketgate": "~0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  }
 }
