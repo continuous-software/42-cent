@@ -3,11 +3,13 @@ var BaseGateway = require('42-cent-base').BaseGateway;
 var PayFlow = require('42-cent-payflow');
 var RocketGate = require('42-cent-rocketgate');
 var VirtualMerchant = require('42-cent-virtualmerchant');
+var nmi = require('42-cent-nmi');
 var supportedGateway = {
     "Authorize.Net": AuthorizeNet,
     "PayFlow": PayFlow,
     "RocketGate": RocketGate,
-    "VirtualMerchant": VirtualMerchant
+    "VirtualMerchant": VirtualMerchant,
+    "NMI": nmi
 };
 
 /**
