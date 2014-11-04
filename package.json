@@ -19,11 +19,11 @@
   "license": "MIT",
   "dependencies": {
     "42-cent-authorizenet": "^0.3.0",
-    "42-cent-base": "^0.2.0",
+    "42-cent-base": "^0.4.0",
+    "42-cent-nmi": "^0.1.0",
     "42-cent-payflow": "^0.3.0",
     "42-cent-rocketgate": "^0.3.0",
-    "42-cent-virtualmerchant": "^0.2.0",
-    "42-cent-nmi":"^0.1.0"
+    "42-cent-virtualmerchant": "^0.4.0"
   },
   "devDependencies": {
     "mocha": "^1.21.4"
