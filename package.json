@@ -1,6 +1,6 @@
 {
   "name": "42-cent",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "abstraction of 42-cent payment gateways, this is a structural interface the different payement gateways must implement ",
   "main": "index.js",
   "scripts": {
