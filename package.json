@@ -23,7 +23,7 @@
     "42-cent-payflow": "^0.5.0",
     "42-cent-rocketgate": "^0.3.0",
     "42-cent-virtualmerchant": "^0.5.0",
-    "42-cent-nmi":"^0.3.0"
+    "42-cent-nmi": "^0.3.0"
   },
   "devDependencies": {
     "mocha": "^1.21.4"
