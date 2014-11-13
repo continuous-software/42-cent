@@ -11,6 +11,9 @@ var supportedGateway = {
     "VirtualMerchant": VirtualMerchant,
     "NMI": nmi
 };
+var CreditCard = require('./models/creditCard.js');
+var Prospect = require('./models/prospect.js');
+
 
 /**
  * @param {String} gateway - the name of a registered gateway
@@ -43,4 +46,12 @@ exports.use = function use(gateway, constructorOption) {
  */
 exports.registerGateway = function registerGateway(name, factory) {
     supportedGateway[name] = factory;
+};
+
+exports.createCreditCard = function (creditCard) {
+    return new CreditCard(creditCard);
+};
+
+exports.createProspect = function (prospect) {
+    return new Prospect(prospect);
 };
