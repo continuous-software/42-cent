@@ -11,8 +11,8 @@ var supportedGateway = {
     "VirtualMerchant": VirtualMerchant,
     "NMI": nmi
 };
-var CreditCard = require('./models/creditCard.js');
-var Prospect = require('./models/prospect.js');
+var CreditCard = require('42-cent-base').CreditCard;
+var Prospect = require('42-cent-base').Prospect;
 
 
 /**
