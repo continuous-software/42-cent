@@ -11,8 +11,9 @@ var supportedGateway = {
     "VirtualMerchant": VirtualMerchant,
     "NMI": nmi
 };
-var CreditCard = require('42-cent-base').CreditCard;
-var Prospect = require('42-cent-base').Prospect;
+var CreditCard = require('42-cent-model').CreditCard;
+var Prospect = require('42-cent-model').Prospect;
+var SubscriptionPlan = require('42-cent-model').SubscriptionPlan;
 
 
 /**
@@ -54,4 +55,8 @@ exports.createCreditCard = function (creditCard) {
 
 exports.createProspect = function (prospect) {
     return new Prospect(prospect);
+};
+
+exports.createSubscriptionPlan = function creatSubscriptionPlan(options) {
+    return new SubscriptionPlan(options);
 };
