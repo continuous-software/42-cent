@@ -1,7 +1,7 @@
 42-cent
 =======
 
-> Node.js wrapper for various payment gateways. 
+> Node.js wrapper for payment gateways. 
 
 ## Installation
 
