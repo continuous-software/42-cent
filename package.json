@@ -1,7 +1,7 @@
 {
   "name": "42-cent",
-  "version": "0.2.14",
-  "description": "abstraction of 42-cent payment gateways, this is a structural interface the different payement gateways must implement ",
+  "version": "1.0.0",
+  "description": "Wrapper for various payment gateways.",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV='test' node ./node_modules/.bin/mocha ./test/ -R spec -t 35000"
@@ -11,20 +11,20 @@
     "url": "https://github.com/continuous-software/42-cent.git"
   },
   "keywords": [
-    "payment",
     "gateway",
+    "payment",
     "42-cent"
   ],
-  "author": "Laurent Renard",
+  "author": "Laurent Renard <laurent@continuous.in.th>",
   "license": "MIT",
   "dependencies": {
-    "42-cent-authorizenet": "^0.8.1",
     "42-cent-base": "^0.8.0",
     "42-cent-model": "^1.0.0",
-    "42-cent-nmi": "^0.4.0",
-    "42-cent-payflow": "^0.7.0",
-    "42-cent-rocketgate": "^0.5.0",
-    "42-cent-virtualmerchant": "^0.6.0"
+    "node-authorizenet": "^1.0.0",
+    "node-nmi": "^1.0.0",
+    "node-payflow": "^1.0.0",
+    "node-rocketgate": "^1.0.0",
+    "node-virtualmerchant": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^1.21.4"
