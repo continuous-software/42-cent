@@ -20,11 +20,11 @@
   "dependencies": {
     "42-cent-base": "^0.8.0",
     "42-cent-model": "^1.0.0",
-    "node-authorizenet": "^1.0.0",
-    "node-nmi": "^1.0.0",
-    "node-payflow": "^1.0.0",
-    "node-rocketgate": "^1.0.0",
-    "node-virtualmerchant": "^1.0.0"
+    "authorize-net": "^1.0.0",
+    "nmi": "^1.0.0",
+    "payflow": "^1.0.0",
+    "rocketgate": "^1.0.0",
+    "virtualmerchant": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "^1.21.4"
