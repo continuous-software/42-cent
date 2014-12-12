@@ -43,5 +43,3 @@ It is important to note that the BaseGateway API will follow the semantic versio
 * Any change on already defined property will define a new API and therefore will result on a different first digit of the BaseGateway version
 * New supported parameters/methods will define a new functionality and therefore will result in a different second digit of the BaseGateway version
 * Bug fixes/patches should not impact gateways implementation and will result in a different third digit of the BaseGateway version
-
-So be cautious with the BaseGateway version the gateway depends on as it defines its API.
