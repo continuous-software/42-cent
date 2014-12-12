@@ -5,7 +5,7 @@
 
 ## Installation
 
-    $ npm install 42-cent
+    $ npm install -s 42-cent
 
 ## Usage
 
