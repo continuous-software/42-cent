@@ -3,9 +3,6 @@
   "version": "1.0.2",
   "description": "Wrapper for various payment gateways.",
   "main": "index.js",
-  "scripts": {
-    "test": "NODE_ENV='test' node ./node_modules/.bin/mocha ./test/ -R spec -t 35000"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/continuous-software/42-cent.git"
@@ -19,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "42-cent-base": "^0.8.0",
-    "42-cent-model": "^1.0.0",
+    "42-cent-model": "^2.0.0",
     "authorize-net": "^1.0.0",
     "nmi": "^1.0.0",
     "payflow": "^1.0.0",
