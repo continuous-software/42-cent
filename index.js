@@ -4,12 +4,18 @@ var PayFlow = require('payflow').gateway;
 var RocketGate = require('rocketgate').gateway;
 var VirtualMerchant = require('virtualmerchant');
 var NMI = require('nmi');
+var Omise = require('42-cent-omise').factory;
+var Stripe = require('42-cent-stripe').factory;
+var Braintree = require('42-cent-braintree').factory;
 var supportedGateway = {
-    "Authorize.Net": AuthorizeNet,
-    "PayFlow": PayFlow,
-    "RocketGate": RocketGate,
-    "VirtualMerchant": VirtualMerchant,
-    "NMI": NMI
+  "Authorize.Net": AuthorizeNet,
+  "PayFlow": PayFlow,
+  "RocketGate": RocketGate,
+  "VirtualMerchant": VirtualMerchant,
+  "NMI": NMI,
+  "Omise": Omise,
+  "Stripe": Stripe,
+  "Braintree": Braintree
 };
 var CreditCard = require('42-cent-model').CreditCard;
 var Prospect = require('42-cent-model').Prospect;
@@ -22,22 +28,22 @@ var SubscriptionPlan = require('42-cent-model').SubscriptionPlan;
  * see the relevant gateway factory for more details
  * @returns {BaseGateway} an object which inherits (prototype) from BaseGateway
  */
-exports.use = function use(gateway, constructorOption) {
+exports.use = function use (gateway, constructorOption) {
 
-    var gatewayFactory = supportedGateway[gateway];
-    var gw;
+  var gatewayFactory = supportedGateway[gateway];
+  var gw;
 
-    if (!gatewayFactory) {
-        throw new Error('the gateway provided does not match any item of the list...todo');
-    }
+  if (!gatewayFactory) {
+    throw new Error('the gateway provided does not match any item of the list...todo');
+  }
 
-    gw = gatewayFactory(constructorOption);
+  gw = gatewayFactory(constructorOption);
 
-    if (!gw instanceof BaseGateway) {
-        throw new Error('the gateway must be an instance of the BaseGateway');
-    }
+  if (!gw instanceof BaseGateway) {
+    throw new Error('the gateway must be an instance of the BaseGateway');
+  }
 
-    return gw;
+  return gw;
 };
 
 /**
@@ -45,18 +51,18 @@ exports.use = function use(gateway, constructorOption) {
  * @param {String} name - the gateway name
  * @param {Function} factory - a factory function which must return an instance of BaseGateway
  */
-exports.registerGateway = function registerGateway(name, factory) {
-    supportedGateway[name] = factory;
+exports.registerGateway = function registerGateway (name, factory) {
+  supportedGateway[name] = factory;
 };
 
 exports.createCreditCard = function (creditCard) {
-    return new CreditCard(creditCard);
+  return new CreditCard(creditCard);
 };
 
 exports.createProspect = function (prospect) {
-    return new Prospect(prospect);
+  return new Prospect(prospect);
 };
 
-exports.createSubscriptionPlan = function creatSubscriptionPlan(options) {
-    return new SubscriptionPlan(options);
+exports.createSubscriptionPlan = function creatSubscriptionPlan (options) {
+  return new SubscriptionPlan(options);
 };
