@@ -31,8 +31,11 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 ## Supported Gateways
 
 * [Authorize.net](https://github.com/continuous-software/node-authorize-net)
+* [Braintree](https://github.com/continuous-software/42-cent-braintree)
 * [NMI](https://github.com/continuous-software/node-nmi)
+* [Omise](https://github.com/continuous-software/42-cent-omise)
 * [Payflow](https://github.com/continuous-software/node-payflow)
 * [RocketGate](https://github.com/continuous-software/node-rocketgate)
+* [Stripe](https://github.com/continuous-software/42-cent-stripe)
 * [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)
-
+* [PayPal](https://github.com/continous-software/node-paypal)
