@@ -38,4 +38,4 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 * [RocketGate](https://github.com/continuous-software/node-rocketgate)
 * [Stripe](https://github.com/continuous-software/42-cent-stripe)
 * [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)
-* [PayPal](https://github.com/continous-software/node-paypal)
+* [PayPal](https://github.com/continuous-software/42-cent-paypal)
