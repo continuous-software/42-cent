@@ -7,6 +7,7 @@ var NMI = require('nmi');
 var Omise = require('42-cent-omise').factory;
 var Stripe = require('42-cent-stripe').factory;
 var Braintree = require('42-cent-braintree').factory;
+var PayPal = require('42-cent-paypal').factory;
 var supportedGateway = {
   "Authorize.Net": AuthorizeNet,
   "PayFlow": PayFlow,
@@ -15,7 +16,8 @@ var supportedGateway = {
   "NMI": NMI,
   "Omise": Omise,
   "Stripe": Stripe,
-  "Braintree": Braintree
+  "Braintree": Braintree,
+  "PayPal": PayPal
 };
 var CreditCard = require('42-cent-model').CreditCard;
 var Prospect = require('42-cent-model').Prospect;
