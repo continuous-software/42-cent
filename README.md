@@ -39,3 +39,4 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 * [Stripe](https://github.com/continuous-software/42-cent-stripe)
 * [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)
 * [PayPal](https://github.com/continuous-software/42-cent-paypal)
+* [WorldPay](https://github.com/continuous-software/node-worldpay)
