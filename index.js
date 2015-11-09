@@ -24,6 +24,7 @@ var supportedGateway = {
 var CreditCard = require('42-cent-model').CreditCard;
 var Prospect = require('42-cent-model').Prospect;
 var SubscriptionPlan = require('42-cent-model').SubscriptionPlan;
+var Order = require('42-cent-model').Order;
 
 
 /**
@@ -69,4 +70,8 @@ exports.createProspect = function (prospect) {
 
 exports.createSubscriptionPlan = function creatSubscriptionPlan (options) {
   return new SubscriptionPlan(options);
+};
+
+exports.createOrder = function createOrder (order) {
+  return new Order(order)
 };
