@@ -1,3 +1,5 @@
+[![David](https://img.shields.io/david/continuous-software/42-cent.svg)](https://img.shields.io/david/continuous-software/42-cent.svg)
+
 42-cent
 =======
 
