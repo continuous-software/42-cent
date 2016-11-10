@@ -32,13 +32,13 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 
 ## Supported Gateways
 
-* [Authorize.net](https://github.com/continuous-software/node-authorize-net)
-* [Braintree](https://github.com/continuous-software/42-cent-braintree)
-* [NMI](https://github.com/continuous-software/node-nmi)
-* [Omise](https://github.com/continuous-software/42-cent-omise)
-* [Payflow](https://github.com/continuous-software/node-payflow)
-* [RocketGate](https://github.com/continuous-software/node-rocketgate)
-* [Stripe](https://github.com/continuous-software/42-cent-stripe)
-* [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)
-* [PayPal](https://github.com/continuous-software/42-cent-paypal)
-* [WorldPay](https://github.com/continuous-software/node-worldpay)
+* [Authorize.net](https://github.com/continuous-software/node-authorize-net) [![Build Status](https://travis-ci.org/continuous-software/node-authorize-net.svg?branch=master)](https://travis-ci.org/continuous-software/node-authorize-net)
+* [Braintree](https://github.com/continuous-software/42-cent-braintree) [![Build Status](https://travis-ci.org/continuous-software/42-cent-braintree.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-braintree)
+* [NMI](https://github.com/continuous-software/node-nmi) [![Build Status](https://travis-ci.org/continuous-software/node-nmi.svg?branch=master)](https://travis-ci.org/continuous-software/node-nmi)
+* [Omise](https://github.com/continuous-software/42-cent-omise) [![Build Status](https://travis-ci.org/continuous-software/42-cent-omise.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-omise)
+* [Payflow](https://github.com/continuous-software/node-payflow) [![Build Status](https://travis-ci.org/continuous-software/node-payflow.svg?branch=master)](https://travis-ci.org/continuous-software/node-payflow)
+* [RocketGate](https://github.com/continuous-software/node-rocketgate) [![Build Status](https://travis-ci.org/continuous-software/node-rocketgate.svg?branch=master)](https://travis-ci.org/continuous-software/node-rocketgate)
+* [Stripe](https://github.com/continuous-software/42-cent-stripe) [![Build Status](https://travis-ci.org/continuous-software/42-cent-stripe.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-stripe)
+* [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant) [![Build Status](https://travis-ci.org/continuous-software/node-virtualmerchant.svg?branch=master)](https://travis-ci.org/continuous-software/node-virtualmerchant)
+* [PayPal](https://github.com/continuous-software/42-cent-paypal) [![Build Status](https://travis-ci.org/continuous-software/42-cent-paypal.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-paypal)
+* [WorldPay](https://github.com/continuous-software/node-worldpay) [![Build Status](https://travis-ci.org/continuous-software/node-worldpay.svg?branch=master)](https://travis-ci.org/continuous-software/node-worldpay)
