@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "42-cent-base": "^1.0.0",
+    "42-cent-beanstream": "^1.0.0",
     "42-cent-braintree": "^1.0.0",
     "42-cent-model": "^2.0.0",
     "42-cent-omise": "^1.0.0",

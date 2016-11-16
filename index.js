@@ -9,6 +9,7 @@ var Stripe = require('42-cent-stripe').factory;
 var Braintree = require('42-cent-braintree').factory;
 var PayPal = require('42-cent-paypal').factory;
 var WorldPay = require('42-cent-worldpay').factory;
+var Beanstream = require('42-cent-beanstream').factory;
 var supportedGateway = {
   "Authorize.Net": AuthorizeNet,
   "PayFlow": PayFlow,
@@ -19,7 +20,8 @@ var supportedGateway = {
   "Stripe": Stripe,
   "Braintree": Braintree,
   "PayPal": PayPal,
-  "WorldPay": WorldPay
+  "WorldPay": WorldPay,
+  "Beanstream": Beanstream
 };
 var CreditCard = require('42-cent-model').CreditCard;
 var Prospect = require('42-cent-model').Prospect;
