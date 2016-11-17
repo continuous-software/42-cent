@@ -32,6 +32,8 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 
 ## Supported Gateways
 
+**Note:** All builds are run daily thanks to [Travis CI cron jobs](https://docs.travis-ci.com/user/cron-jobs/).
+
 [![Build Status](https://travis-ci.org/continuous-software/node-authorize-net.svg?branch=master)](https://travis-ci.org/continuous-software/node-authorize-net) [Authorize.net](https://github.com/continuous-software/node-authorize-net)  
 [![Build Status](https://travis-ci.org/continuous-software/42-cent-braintree.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-braintree) [Braintree](https://github.com/continuous-software/42-cent-braintree)  
 [![Build Status](https://travis-ci.org/continuous-software/node-nmi.svg?branch=master)](https://travis-ci.org/continuous-software/node-nmi) [NMI](https://github.com/continuous-software/node-nmi)  
