@@ -1,7 +1,7 @@
 {
   "name": "42-cent",
   "version": "1.4.0",
-  "description": "Wrapper for various payment gateways.",
+  "description": "Node.js multi-gateway payment processing module",
   "main": "index.js",
   "repository": {
     "type": "git",
