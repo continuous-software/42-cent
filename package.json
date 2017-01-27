@@ -1,7 +1,7 @@
 {
   "name": "42-cent",
   "version": "1.4.0",
-  "description": "Wrapper for various payment gateways.",
+  "description": "Node.js multi-gateway payment processing module",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "42-cent-paypal": "^1.0.0",
     "42-cent-stripe": "^1.0.0",
     "42-cent-worldpay": "^1.0.0",
+    "42-cent-moneris": "^1.0.0",
     "authorize-net": "^1.0.0",
     "nmi": "^1.0.0",
     "payflow": "^1.0.0",

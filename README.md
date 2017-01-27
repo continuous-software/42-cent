@@ -3,7 +3,7 @@
 42-cent
 =======
 
-> Node.js wrapper for payment gateways. 
+> Node.js multi-gateway payment processing module
 
 ## Installation
 
@@ -45,3 +45,4 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 [![Build Status](https://travis-ci.org/continuous-software/42-cent-paypal.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-paypal) [PayPal](https://github.com/continuous-software/42-cent-paypal)  
 [![Build Status](https://travis-ci.org/continuous-software/node-worldpay.svg?branch=master)](https://travis-ci.org/continuous-software/node-worldpay) [WorldPay](https://github.com/continuous-software/node-worldpay)  
 [![Build Status](https://travis-ci.org/continuous-software/node-beanstream.svg?branch=master)](https://travis-ci.org/continuous-software/node-beanstream) [Beanstream](https://github.com/continuous-software/node-beanstream)
+[![Build Status](https://travis-ci.org/continuous-software/42-cent-moneris.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-moneris) [Moneris](https://github.com/continuous-software/42-cent-beanstream)
