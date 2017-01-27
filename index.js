@@ -10,7 +10,7 @@ var Braintree = require('42-cent-braintree').factory;
 var PayPal = require('42-cent-paypal').factory;
 var WorldPay = require('42-cent-worldpay').factory;
 var Beanstream = require('42-cent-beanstream').factory;
-var Moneris = require('42-cent-moneris').factory;
+var Moneris = require('42-cent-moneris');
 var supportedGateway = {
   "Authorize.Net": AuthorizeNet,
   "PayFlow": PayFlow,
