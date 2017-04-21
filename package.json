@@ -23,9 +23,9 @@
     "42-cent-paypal": "^1.0.0",
     "42-cent-stripe": "^1.0.0",
     "42-cent-worldpay": "^1.0.0",
-    "42-cent-moneris": "^1.0.0",
+    "42-cent-moneris": "^1.0.4",
     "authorize-net": "^1.0.0",
-    "nmi": "^1.0.0",
+    "nmi": "^1.0.3",
     "payflow": "^1.0.0",
     "rocketgate": "^1.0.0",
     "virtualmerchant": "^1.0.0"
