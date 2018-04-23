@@ -3,6 +3,8 @@
 42-cent
 =======
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/continuous-software/42-cent.svg)](https://greenkeeper.io/)
+
 > Node.js multi-gateway payment processing module
 
 ## Installation
