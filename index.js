@@ -1,29 +1,33 @@
 var BaseGateway = require('42-cent-base').BaseGateway;
-var AuthorizeNet = require('authorize-net');
-var PayFlow = require('payflow').gateway;
-var RocketGate = require('rocketgate').gateway;
-var VirtualMerchant = require('virtualmerchant').gateway;
-var NMI = require('nmi');
+
 var Omise = require('42-cent-omise').factory;
 var Stripe = require('42-cent-stripe').factory;
 var Braintree = require('42-cent-braintree').factory;
 var PayPal = require('42-cent-paypal').factory;
 var WorldPay = require('42-cent-worldpay').factory;
 var Beanstream = require('42-cent-beanstream').factory;
-var Moneris = require('42-cent-moneris');
+
+// Deprecated:
+// var AuthorizeNet = require('authorize-net');
+// var RocketGate = require('rocketgate').gateway;
+// var NMI = require('nmi');
+// var PayFlow = require('payflow').gateway;
+// var VirtualMerchant = require('virtualmerchant').gateway;
+// var Moneris = require('42-cent-moneris');
+
 var supportedGateway = {
-  "Authorize.Net": AuthorizeNet,
-  "PayFlow": PayFlow,
-  "RocketGate": RocketGate,
-  "VirtualMerchant": VirtualMerchant,
-  "NMI": NMI,
   "Omise": Omise,
   "Stripe": Stripe,
   "Braintree": Braintree,
   "PayPal": PayPal,
   "WorldPay": WorldPay,
   "Beanstream": Beanstream,
-  "Moneris": Moneris
+  // "Authorize.Net": AuthorizeNet,
+  // "PayFlow": PayFlow,
+  // "RocketGate": RocketGate,
+  // "VirtualMerchant": VirtualMerchant,
+  // "NMI": NMI,
+  // "Moneris": Moneris
 };
 var CreditCard = require('42-cent-model').CreditCard;
 var Prospect = require('42-cent-model').Prospect;
