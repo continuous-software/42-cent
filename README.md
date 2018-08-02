@@ -44,7 +44,8 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 
 ### Deprecated Gateways
 
-The following gateways are deprecated either because the service provider discontinued or changed their API. Feel free to go and fix things if you can.
+The following gateways are deprecated either because the service provider discontinued or changed their API.  
+Feel free to go and fix things if you can.
 
 [![Build Status](https://travis-ci.org/continuous-software/node-authorize-net.svg?branch=master)](https://travis-ci.org/continuous-software/node-authorize-net) [Authorize.net](https://github.com/continuous-software/node-authorize-net)  
 [![Build Status](https://travis-ci.org/continuous-software/node-nmi.svg?branch=master)](https://travis-ci.org/continuous-software/node-nmi) [NMI](https://github.com/continuous-software/node-nmi)  
