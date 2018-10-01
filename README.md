@@ -1,4 +1,4 @@
-[![David](https://img.shields.io/david/continuous-software/42-cent.svg)](https://img.shields.io/david/continuous-software/42-cent.svg) [![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
+[![GuardRails badge](https://badges.production.guardrails.io/continuous-software/42-cent.svg)](https://www.guardrails.io) [![David](https://img.shields.io/david/continuous-software/42-cent.svg)](https://img.shields.io/david/continuous-software/42-cent.svg) [![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
 
 42-cent
 =======
