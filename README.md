@@ -1,4 +1,4 @@
-[![David](https://img.shields.io/david/continuous-software/42-cent.svg)](https://img.shields.io/david/continuous-software/42-cent.svg) [![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
+[![GuardRails badge](https://badges.production.guardrails.io/continuous-software/42-cent.svg)](https://www.guardrails.io) [![David](https://img.shields.io/david/continuous-software/42-cent.svg)](https://img.shields.io/david/continuous-software/42-cent.svg) [![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
 
 42-cent
 =======
@@ -51,4 +51,4 @@ Feel free to go and fix things if you can.
 [![Build Status](https://travis-ci.org/continuous-software/node-nmi.svg?branch=master)](https://travis-ci.org/continuous-software/node-nmi) [NMI](https://github.com/continuous-software/node-nmi)  
 [![Build Status](https://travis-ci.org/continuous-software/node-payflow.svg?branch=master)](https://travis-ci.org/continuous-software/node-payflow) [Payflow](https://github.com/continuous-software/node-payflow)  
 [![Build Status](https://travis-ci.org/continuous-software/node-rocketgate.svg?branch=master)](https://travis-ci.org/continuous-software/node-rocketgate) [RocketGate](https://github.com/continuous-software/node-rocketgate)  
-[![Build Status](https://travis-ci.org/continuous-software/node-virtualmerchant.svg?branch=master)](https://travis-ci.org/continuous-software/node-virtualmerchant) [![GuardRails badge](https://badges.production.guardrails.io/continuous-software/42-cent.svg)](https://www.guardrails.io) [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)  
+[![Build Status](https://travis-ci.org/continuous-software/node-virtualmerchant.svg?branch=master)](https://travis-ci.org/continuous-software/node-virtualmerchant) [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)  
