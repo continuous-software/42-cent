@@ -1,4 +1,4 @@
-[![GuardRails badge](https://badges.production.guardrails.io/continuous-software/42-cent.svg)](https://www.guardrails.io) [![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
+[![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
 
 42-cent
 =======
