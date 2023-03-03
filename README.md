@@ -1,27 +1,41 @@
-[![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
+ [![npm](https://img.shields.io/npm/dm/42-cent.svg)](https://github.com/continuous-software/42-cent)
 
 42-cent
 =======
 
-> Node.js multi-gateway payment processing module
+# Introduction
+ 42-cent allows businesses to accept payments from customers through multiple payment gateways. 42-cent  handle payment transactions between a customer and a business ,which  also help to reduce the risk of payment processing failures by spreading transactions across multiple gateways.
 
 ## Installation
+ The best way to consume 42-cent is via the npm package which you can install with npm (or yarn if you prefer).
+   
+   
+#### [npm](https://www.npmjs.com/package/42-cent)
+~~~
+$ npm install --save 42-cent
+~~~
 
-    $ npm install -s 42-cent
+#### [yarn](https://yarnpkg.com/en/package/42-cent)
+~~~
+yarn add 42-cent
+~~~
 
 ## Usage
+  You can Import component like registerGateway from ``42cent``
 
-```Javascript
+you can require a gateway:
 
+Javascript
+~~~
 var Gateways = require('42-cent');
 var client = Gateways.use('Authorize.Net', credentials);
-```
+~~~
 
 You can register other gateways - or replace an existing one:
+~~~
 
-```Javascript
 Gateways.registerGateway('GatewayName', factoryFunction);
-```
+~~~
  
 The factory function must return an instance of the abstract [BaseGateway](https://github.com/continuous-software/42-cent-base).
 
@@ -32,7 +46,7 @@ You can see the API the gateway intends to fulfill by looking at the [BaseGatewa
 
 ## Supported Gateways
 
-**Note:** All builds are run daily thanks to [Travis CI cron jobs](https://docs.travis-ci.com/user/cron-jobs/).
+*Note:* All builds are run daily thanks to [Travis CI cron jobs](https://docs.travis-ci.com/user/cron-jobs/).
 
 [![Build Status](https://travis-ci.org/continuous-software/42-cent-braintree.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-braintree) [Braintree](https://github.com/continuous-software/42-cent-braintree)  
 [![Build Status](https://travis-ci.org/continuous-software/42-cent-omise.svg?branch=master)](https://travis-ci.org/continuous-software/42-cent-omise) [Omise](https://github.com/continuous-software/42-cent-omise)  
@@ -51,4 +65,4 @@ Feel free to go and fix things if you can.
 [![Build Status](https://travis-ci.org/continuous-software/node-nmi.svg?branch=master)](https://travis-ci.org/continuous-software/node-nmi) [NMI](https://github.com/continuous-software/node-nmi)  
 [![Build Status](https://travis-ci.org/continuous-software/node-payflow.svg?branch=master)](https://travis-ci.org/continuous-software/node-payflow) [Payflow](https://github.com/continuous-software/node-payflow)  
 [![Build Status](https://travis-ci.org/continuous-software/node-rocketgate.svg?branch=master)](https://travis-ci.org/continuous-software/node-rocketgate) [RocketGate](https://github.com/continuous-software/node-rocketgate)  
-[![Build Status](https://travis-ci.org/continuous-software/node-virtualmerchant.svg?branch=master)](https://travis-ci.org/continuous-software/node-virtualmerchant) [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)  
+[![Build Status](https://travis-ci.org/continuous-software/node-virtualmerchant.svg?branch=master)](https://travis-ci.org/continuous-software/node-virtualmerchant) [VirtualMerchant](https://github.com/continuous-software/node-virtualmerchant)
