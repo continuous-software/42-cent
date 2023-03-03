@@ -3,13 +3,27 @@
 42-cent
 =======
 
-> Node.js multi-gateway payment processing module
+# Introduction
+ 42-cent allows businesses to accept payments from customers through multiple payment gateways. 42-cent  handle payment transactions between a customer and a business ,which  also help to reduce the risk of payment processing failures by spreading transactions across multiple gateways.
 
 ## Installation
+ The best way to consume 42-cent is via the npm package which you can install with npm (or yarn if you prefer).
+   
+   
+#### [npm](https://www.npmjs.com/package/42-cent)
+```
+npm install --save 42-cent
+```
 
-    $ npm install -s 42-cent
+#### [yarn](https://yarnpkg.com/en/package/42-cent)
+```
+yarn add 42-cent
+```
 
 ## Usage
+  You can Import component like registerGateway from ``42cent``
+
+you can require a gateway:
 
 ```Javascript
 
